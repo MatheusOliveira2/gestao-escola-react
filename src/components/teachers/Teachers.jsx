@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import http from '../../http';
 
 export default function Teachers() {
-  const [teachers, setteachers] = useState([]);
+  const [teachers, setTeachers] = useState([]);
 
   useEffect(() => {
     const getTeachers = async () => {
@@ -41,7 +41,6 @@ export default function Teachers() {
               <td>{teacher.id}</td>
 
               <td>{teacher.name}</td>
-              <td>{teacher.age}</td>
               <td>
                 {teacher.teacherClass !== null ? teacher.teacherClass : '-'}
               </td>

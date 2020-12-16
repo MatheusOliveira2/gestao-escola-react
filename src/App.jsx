@@ -10,7 +10,7 @@ function App() {
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/students">Alunos</Nav.Link>
-          <Nav.Link href="#pricing">Professores</Nav.Link>
+          <Nav.Link href="/teachers">Professores</Nav.Link>
           <Nav.Link href="/classes">Turmas</Nav.Link>
         </Nav>
       </Navbar>
