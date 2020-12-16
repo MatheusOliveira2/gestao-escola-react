@@ -65,6 +65,9 @@ export default function Class() {
           ))}
         </tbody>
       </Table>
+      <Link to="classes/create">
+        <Button>Cadastrar Turma</Button>
+      </Link>
     </div>
   );
 }
