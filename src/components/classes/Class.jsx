@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import http from '../../http';
 
 export default function Class() {
@@ -42,16 +43,14 @@ export default function Class() {
         <tbody>
           {classes.map((schoolClass, i) => (
             <tr key={i}>
-              <td onClick={() => handleRowClick(schoolClass.id)}>
-                {schoolClass.id}
-              </td>
-              <td onClick={() => handleRowClick(schoolClass.id)}>
-                {schoolClass.name}
-              </td>
-              <td onClick={() => handleRowClick(schoolClass.id)}>
-                {schoolClass.students.length}
-              </td>
-              <td onClick={() => handleRowClick(schoolClass.id)}>
+              <Link to={`classes/info?id=${schoolClass.id}`}>
+                <td onClick={() => handleRowClick(schoolClass.id)}>
+                  {schoolClass.id}
+                </td>
+              </Link>
+              <td>{schoolClass.name}</td>
+              <td>{schoolClass.students.length}</td>
+              <td>
                 {schoolClass.teacher !== null ? schoolClass.teacher.name : '-'}
               </td>
               <td>
