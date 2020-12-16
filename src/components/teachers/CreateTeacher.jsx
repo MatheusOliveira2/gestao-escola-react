@@ -18,9 +18,10 @@ export default function CreateTeacher() {
 
   return (
     <div>
+      <h2>Cadastrar Professor</h2>
       <Form>
         <Form.Group controlId="exampleForm.ControlInput1">
-          <Row>
+          <Row className="justify-content-center">
             <Col lg={4}>
               <Form.Label>Nome do Professor</Form.Label>
               <Form.Control

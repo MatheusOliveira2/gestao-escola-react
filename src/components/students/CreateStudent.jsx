@@ -19,9 +19,10 @@ export default function CreateStudent() {
 
   return (
     <div>
+      <h2>Cadastrar Aluno</h2>
       <Form>
         <Form.Group controlId="exampleForm.ControlInput1">
-          <Row>
+          <Row className="justify-content-center">
             <Col lg={4}>
               <Form.Label>Nome do Aluno</Form.Label>
               <Form.Control

@@ -6,15 +6,17 @@ function App() {
   return (
     <div>
       <Navbar bg="dark">
-        <Navbar.Brand href="/">Gerenciamento Escola</Navbar.Brand>
+        <Navbar.Brand href="/">Gerenciamento Escolar</Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link className="nav" href="/">
+            Home
+          </Nav.Link>
           <Nav.Link href="/students">Alunos</Nav.Link>
           <Nav.Link href="/teachers">Professores</Nav.Link>
           <Nav.Link href="/classes">Turmas</Nav.Link>
         </Nav>
       </Navbar>
-      <Container>
+      <Container className="App">
         <Routes />
       </Container>
     </div>
