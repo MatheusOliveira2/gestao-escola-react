@@ -11,6 +11,7 @@ import Students from '../components/students/Students';
 import CreateStudent from '../components/students/CreateStudent';
 
 import Teachers from '../components/teachers/Teachers';
+import CreateTeacher from '../components/teachers/CreateTeacher';
 
 const Routes = () => {
   return (
@@ -25,7 +26,7 @@ const Routes = () => {
         <Route exact path="/students/create" component={CreateStudent}></Route>
 
         <Route exact path="/teachers" component={Teachers}></Route>
-        <Route exact path="/teachers/create" component={Teachers}></Route>
+        <Route exact path="/teachers/create" component={CreateTeacher}></Route>
       </Switch>
     </BrowserRouter>
   );

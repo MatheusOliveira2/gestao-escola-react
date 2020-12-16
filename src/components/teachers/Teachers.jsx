@@ -56,7 +56,7 @@ export default function Teachers() {
           ))}
         </tbody>
       </Table>
-      <Link to="teachers/create">
+      <Link to="/teachers/create">
         <Button>Cadastrar Professor</Button>
       </Link>
     </div>
